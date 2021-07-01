@@ -1,0 +1,52 @@
+<% layout('layouts/boilerplate')%>
+<h1 style="text-align: center; position: relative; margin-top: 8%">Register</h1>
+<form action="/register" method="POST" class="validated-form" novalidate>
+  <div class="mb-3">
+    <input
+      class="form-control"
+      type="text"
+      id="username"
+      name="username"
+      placeholder="Username"
+      style="position: relative; width: 30%; left: 35%; border-radius: 10px"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      class="form-control"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Email Id"
+      style="position: relative; width: 30%; left: 35%; border-radius: 10px"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      class="form-control"
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Password"
+      style="position: relative; width: 30%; left: 35%; border-radius: 10px"
+      required
+    />
+  </div>
+  <button
+    class="btn btn-danger"
+    style="
+    border-radius: 10px;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+    border-color: #2f080e #2f080e hsl(351, 68%, 1.5%);
+    background-color: #27b371;
+    background-image: linear-gradient(to bottom, #4aac7b, #0bac69);
+    position: relative;
+    width: 30%;
+      left: 35%;
+  "
+  >
+    Register
+  </button>
+</form>

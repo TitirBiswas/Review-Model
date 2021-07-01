@@ -1,0 +1,46 @@
+<% layout('layouts/boilerplate')%>
+<h1 style="text-align: center; position: relative; margin-top: 8%">Login</h1>
+<form action="/login" method="POST" class="validated-form" novalidate>
+  <div class="mb-3">
+    <input
+      class="form-control"
+      type="text"
+      id="username"
+      name="username"
+      placeholder="Username"
+      required
+      style="position: relative; width: 30%; left: 35%; border-radius: 10px"
+    />
+  </div>
+
+  <div class="mb-3">
+    <input
+      class="form-control"
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Password"
+      required
+      style="position: relative; width: 30%; left: 35%; border-radius: 10px"
+    />
+  </div>
+  <button
+    class="btn btn-danger"
+    style="
+    border-radius: 10px;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+    border-color: #2f080e #2f080e hsl(351, 68%, 1.5%);
+    background-color: #1e95cc;
+    background-image: linear-gradient(to bottom, #55a1c7, #0044cc);
+    position: relative;
+    width: 30%;
+      left: 35%;
+  "
+    
+  >
+    Login
+  </button>
+</form>
+<a href="/register" style="position: relative; left: 42%"
+  >Register to make account
+</a>

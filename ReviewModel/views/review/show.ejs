@@ -1,0 +1,55 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="row">
+  <div
+    class="card"
+    style="
+      position: relative;
+      width: 40%;
+      left: 30%;
+      margin-top: 12%;
+
+      border: none;
+      border-radius: 15px;
+      background-color: rgb(245, 245, 245);
+    "
+  >
+    <h3><%= review.author.username%></h3>
+    <h5><%= review.body %></h5>
+    <% if( currentUser && review.author.equals(currentUser._id)) {%>
+
+    <a
+      class="card-link btn btn-info"
+      href="/review/<%=review._id%>/edit"
+      style="position: relative; width: 20%; top: 15%; left: 20%;          border-radius: 10px;
+   
+      text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+      background-color: #1e95cc;
+            background-image: linear-gradient(to bottom, #55a1c7, #0044cc);"
+      >Edit</a
+    >
+    <form
+      class="d-inline"
+      action="/review/<%=review._id%>?_method=DELETE"
+      method="POST"
+    >
+      <button
+        class="btn btn-danger"
+        style="position: relative; width: 20%; left: 60%; bottom: 40%;     background-color: hsl(351, 68%, 11%) !important;
+        background-repeat: repeat-x;
+        background-image: -o-linear-gradient(top, #eb324e, #5a121d);
+        background-image: linear-gradient(#d44157, #420b14);
+        border-color: #4d0e18 #53101a rgb(110, 26, 43);
+        color: #fff !important;
+        text-shadow: 0 -1px 0 rgba(36, 36, 36, 0.62);
+        position: relative;
+        border-radius: 10px;
+      "
+      >
+        Delete
+      </button>
+    </form>
+  </div>
+  <% } %>
+  <!-- <div class="card-footer text-muted"></div> -->
+</div>

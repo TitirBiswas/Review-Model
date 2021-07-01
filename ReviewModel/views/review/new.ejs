@@ -1,0 +1,35 @@
+<% layout('layouts/boilerplate')%>
+<div class="row">
+  <h1 class="text-center">New Review</h1>
+  <div class="col-6 offset-3">
+    <form action="/review" method="POST" novalidate class="validated-form">
+      <div class="mb-3">
+        <!-- <label class="form-label" for="body">Review</label> -->
+        <input
+          class="form-control"
+          type="text"
+          id="title"
+          name="review[body]"
+          placeholder="Add a new thread"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <button
+          class="btn btn-success"
+          style="
+          border-radius: 10px;
+          margin-left: 5%;
+          text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+          background-color: #1e95cc;
+          background-image: linear-gradient(to bottom, #55a1c7, #0044cc);
+        "
+        >
+          Add
+        </button>
+      </div>
+    </form>
+    <a href="/review" style="position: relative; left: 42%">All Reviews</a>
+  </div>
+</div>

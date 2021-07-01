@@ -1,0 +1,53 @@
+<% layout('layouts/boilerplate')%>
+<div class="row">
+  <h1 class="text-center" style="position: relative; margin-top: 10%">
+    Edit Review
+  </h1>
+  <div class="col-6 offset-3">
+    <form
+      action="/review/<%=review._id%>?_method=PUT"
+      method="POST"
+      novalidate
+      class="validated-form"
+    >
+      <div class="mb-3">
+        <!-- <label
+          class="form-label"
+          for="title"
+          style="position: relative; left: 30%"
+          >Edit</label
+        > -->
+        <input
+          class="form-control"
+          type="text"
+          id="body"
+          name="review[body]"
+          value="<%=review.body %>"
+          style="border-radius: 10px; margin-top: 3%"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <button
+          class="btn btn-info"
+          style="
+            position: relative;
+            width: 20%;
+            top: 15%;
+            left: 40%;
+            border-radius: 10px;
+
+            text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+            background-color: #1e95cc;
+            background-image: linear-gradient(to bottom, #55a1c7, #0044cc);
+          "
+        >
+          Edit
+        </button>
+      </div>
+    </form>
+    <a href="/review/<%=review._id%>" style="position: relative; left: 40%"
+      >Back To Review</a>
+  </div>
+</div>

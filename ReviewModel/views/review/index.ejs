@@ -1,0 +1,40 @@
+<% layout('layouts/boilerplate')%>
+
+<h1 style="text-align: center">All Reviews</h1>
+<div>
+  <a href="/review/new" style="margin-left: 45%">Add Review</a>
+</div>
+<% for (let review of reviews){%><br />
+<div
+  class="card"
+  style="
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(245, 245, 245);
+    width: 50%;
+    left: 25%;
+  "
+  
+> <p style=" color: black;"> <%= review.author.username%></p>
+  <div class="row">
+    <div class="col">
+    
+      <div class="card-body">
+        <a
+          class="btn btn-primary"
+          href="/review/<%=review._id%>"
+          style="
+            border-radius: 5px;
+            margin-left: 5%;
+            color:black;
+            background-color: #95d4f3;
+            background-image: linear-gradient(to bottom, #75c2e9, #97b3bb);
+          "
+          ><%=review.body%></a
+        ><br />
+      </div>
+    </div>
+  </div>
+</div>
+<% }%>

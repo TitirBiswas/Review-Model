@@ -1,0 +1,49 @@
+<nav
+  class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark"
+  style="
+    background-color: #4d484a;
+    background-image: linear-gradient(to bottom, #5a5e5f, #1c1d1c);
+    border-color: #292021 #1d1a1a rgb(43, 41, 41);
+  "
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ReviewModel</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/review">Reviews</a>
+        <a class="nav-link" href="/review/new">Add Review</a>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <% if(!currentUser) {%>
+        <a class="nav-link" href="/login">Login</a>
+        <a class="nav-link" href="/register">Register</a>
+        <% } else {%>
+        <h2 class="navbar-brand brand-name">
+          <a href="/"
+            ><img
+              class="logo-image"
+              src="../../images/logo.png"
+              height="25px"
+              width="25px"
+              style="position: relative; margin-top: 4%"
+          /></a>
+        </h2>
+        <a class="navbar-brand" href="#"><%=currentUser.username %> </a>
+        <a class="nav-link" href="/logout">Logout</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
