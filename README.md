@@ -7,7 +7,7 @@
   * [ Project Links ](#Project-Links)
   * [ Screenshots-Demo ](#Screenshots-Demo)
   * [ Technologies ](#Technologies)
-   * [ Work Flow ](#Work Flow)
+  * [ Work Flow ](#Work Flow)
   * [ Installation ](#Installation)
  
  #
@@ -21,9 +21,10 @@
   ```
  Frontend: EJS  
  Backend: node.js, Mongodb, Mongoose, Express js
+ #
  
   ## Work Flow
-  ```
+ 
  Frontend: 
  * Ejs templating has been used to serve the frontend 
  * CSS and bootstrap used for styling the templates
