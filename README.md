@@ -20,11 +20,11 @@
 ![Authentication](https://user-images.githubusercontent.com/80755644/124270091-59cb4c80-db59-11eb-8ada-2bfa82e3e63b.gif)
 
 
-CRUD
+   CRUD
 ![CRUD](https://user-images.githubusercontent.com/80755644/124270125-68b1ff00-db59-11eb-8727-afd49007b69e.gif)
 
 
-AUTHORIZATION
+   AUTHORIZATION
 ![Authorization](https://user-images.githubusercontent.com/80755644/124270509-ec6beb80-db59-11eb-9502-ba7d8fd901c1.gif)
 
 
