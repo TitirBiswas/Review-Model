@@ -7,7 +7,7 @@
   * [ Project Links ](#Project-Links)
   * [ Screenshots-Demo ](#Screenshots-Demo)
   * [ Technologies ](#Technologies)
-  * [ Work Flow ](#Work Flow)
+  * [ Work Flow ](#Work-Flow)
   * [ Installation ](#Installation)
  
  #
@@ -18,7 +18,7 @@
    ## Screenshots-Demo
    
    ## Technologies 
-  ```
+ 
  Frontend: EJS  
  Backend: node.js, Mongodb, Mongoose, Express js
  #
@@ -33,7 +33,7 @@
 * Node.JS has been used to serve backend which will run on http://localhost:3040/
 * router for all the CRUD functions for review and authentication for users
 * MongoDB has been used as database to store the details of review and user
-* Session package used for storing temporary reqiured for authorization
+* Session package used for storing temporary data reqiured for authorization
  
 # Installing
  Clone the repository
