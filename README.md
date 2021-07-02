@@ -33,6 +33,7 @@
  
  Frontend: EJS  
  Backend: node.js, Mongodb, Mongoose, Express js
+ others: Passport js 
  #
  
   ## Work Flow
@@ -43,7 +44,7 @@
 
  Backend:
 * Node.JS has been used to serve backend which will run on http://localhost:3040/
-* router for all the CRUD functions for review and authentication for users
+* router for all the CRUD functions for review and Passport js for authentication of users
 * MongoDB has been used as database to store the details of review and user
 * Session package used for storing temporary data reqiured for authorization
  
